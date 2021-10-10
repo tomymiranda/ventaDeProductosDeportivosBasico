@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Changuito from "./components/Changuito";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Producto from "./components/Producto";
@@ -12,6 +13,9 @@ function App() {
     {id:3, articulo:"Camiseta Seleccion Argentina 2021",precio:8999},
     {id:4, articulo:"Camiseta Real Madrid 19/20",precio:5000}
     ]);
+  
+  const [changuito,agregarProducto] = useState([])
+
 
   return (
     <div >
@@ -21,12 +25,20 @@ function App() {
       {productos.map( producto =>(
 
         <Producto
+          key = {producto.id}
           producto = {producto}
+          productos = {productos}
+          changuito = {changuito}
+          agregarProducto = {agregarProducto}
         />
 
 
       )
       )}
+
+      <Changuito
+        changuito = {changuito}
+      />
       <Footer 
         anio = {2021}
       />
