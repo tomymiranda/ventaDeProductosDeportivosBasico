@@ -12,9 +12,9 @@ const Changuito = ({changuito}) =>{
                 {
 
                     changuito.map(
-                        producto => (
+                        (producto,idx) => (
                             <Producto
-                                key = {producto.id}
+                                key = {idx}
                                 producto = {producto}
                             />
                         )
