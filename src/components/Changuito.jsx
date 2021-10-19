@@ -2,6 +2,7 @@ import React from 'react';
 import { Fragment } from 'react';
 import "./Changuito.css";
 import Producto from './Producto';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Changuito = ({changuito, agregarProducto}) =>{
     return (

@@ -1,10 +1,10 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
     return ( 
 
         <div>
-            Mucha variedad y buenos precios.
+            <h3>Mucha variedad y buenos precios.</h3>
         </div>
 
      );

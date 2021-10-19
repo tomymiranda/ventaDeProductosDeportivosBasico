@@ -3,6 +3,7 @@ import Changuito from "./components/Changuito";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Producto from "./components/Producto";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   

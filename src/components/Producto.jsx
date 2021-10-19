@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Producto = ({producto,productos,changuito,agregarProducto}) => {
   
   const {id,articulo,precio} = producto;
