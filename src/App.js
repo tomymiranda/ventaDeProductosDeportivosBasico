@@ -38,6 +38,7 @@ function App() {
 
       <Changuito
         changuito = {changuito}
+        agregarProducto = {agregarProducto}
       />
       <Footer 
         anio = {2021}

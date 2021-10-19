@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import "./Changuito.css";
 import Producto from './Producto';
 
-const Changuito = ({changuito}) =>{
+const Changuito = ({changuito, agregarProducto}) =>{
     return (
 
         <Fragment>
@@ -16,6 +16,8 @@ const Changuito = ({changuito}) =>{
                             <Producto
                                 key = {idx}
                                 producto = {producto}
+                                changuito = {changuito}
+                                agregarProducto = {agregarProducto}
                             />
                         )
 

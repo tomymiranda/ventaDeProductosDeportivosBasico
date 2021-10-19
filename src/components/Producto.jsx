@@ -13,7 +13,11 @@ const Producto = ({producto,productos,changuito,agregarProducto}) => {
       //console.log(producto);
         console.log(changuito);
     }  
-
+  
+  const eliminarProducto = (id) =>{
+    const productos = changuito.filter( producto => producto.id != id);
+    agregarProducto(productos);
+  }  
   
 
   return (
@@ -32,6 +36,7 @@ const Producto = ({producto,productos,changuito,agregarProducto}) => {
               :
                           <button
                           type = "button"
+                          onClick = { () => eliminarProducto(id)}
                           >
                           eliminar</button>
 
