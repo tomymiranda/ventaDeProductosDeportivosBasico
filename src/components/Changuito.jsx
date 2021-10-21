@@ -9,7 +9,7 @@ const Changuito = ({changuito, agregarProducto}) =>{
 
         <Fragment>
             <div className = "changuito">
-                <h3>Changuito de compras</h3>
+                <h3>🛒</h3>
                 {
 
                     changuito.map(
