@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Producto from "./components/Producto";
 import 'bootstrap/dist/css/bootstrap.min.css';
+{/*import {BrouserRouter as Router,Switch,Route} from 'react-router-dom';*/}
 
 function App() {
   
@@ -19,12 +20,11 @@ function App() {
 
 
   return (
-    <div >
+    <div>
       <Header />
-      
+      <div className = "container">
       <h1>Venta de Articulos deportivos online "es gatorade"</h1>
       {productos.map( producto =>(
-
         <Producto
           key = {producto.id}
           producto = {producto}
@@ -32,10 +32,10 @@ function App() {
           changuito = {changuito}
           agregarProducto = {agregarProducto}
         />
-
-
       )
       )}
+        </div>
+      
 
       <Changuito
         changuito = {changuito}

@@ -5,7 +5,7 @@ const Footer = ({anio}) => {
     //entre {} se ponen constantes q quiero devolver o q figuren
     
     return ( 
-        <h2>El año es: {anio} </h2>
+        <h4>El año es: {anio} </h4>
      );
 }
  
