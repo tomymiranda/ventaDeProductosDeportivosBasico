@@ -13,7 +13,8 @@ function App() {
     {id:1, articulo:"Botines Nike Mercurial Vapor",precio:15000},
     {id:2, articulo:"Botines Adidas F50",precio:16000},
     {id:3, articulo:"Camiseta Seleccion Argentina 2021",precio:8999},
-    {id:4, articulo:"Camiseta Real Madrid 19/20",precio:5000}
+    {id:4, articulo:"Camiseta Real Madrid 19/20",precio:5000},
+    {id:5, articulo:"Camiseta Manchester United 19/20",precio:5000}
     ]);
   
   const [changuito,agregarProducto] = useState([])
@@ -23,7 +24,7 @@ function App() {
     <div>
       <Header />
       <div className = "container">
-      <h1>Venta de Articulos deportivos online "es gatorade"</h1>
+      <h1>Venta de Articulos deportivos "es gatorade"</h1>
       {productos.map( producto =>(
         <Producto
           key = {producto.id}
@@ -34,16 +35,17 @@ function App() {
         />
       )
       )}
-        </div>
-      
-
+      </div>
+      <div>
       <Changuito
         changuito = {changuito}
         agregarProducto = {agregarProducto}
-      />
-      <Footer 
-        anio = {2021}
-      />
+        />
+      </div>
+      <div>
+      <Footer/>
+      </div>
+      
     </div>
     
   );

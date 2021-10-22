@@ -23,7 +23,7 @@ const Producto = ({producto,productos,changuito,agregarProducto}) => {
   return (
         <Fragment>
           <div>
-            <h3>{id} - {articulo} - {precio}</h3>
+            <h3>{articulo} - ${precio}</h3>
             {
 
               productos
